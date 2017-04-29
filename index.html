@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TicTacToe game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="text-center">
+        <section id="setTime" class="text-center">
+            <h1>Pomodoro Clock</h1>
+            <div>
+                <button class="workreducebtn btn-primary btn-lg">-</button>
+                <input type="number" id="workTime" value=25 min="1" />
+                <button class="workaddbtn btn-primary btn-lg">+</button>
+                <h3>minutes of <span id="workText">work</span> and...</h3>
+            </div>
+            <div>
+                <button class="breakreducebtn btn-primary btn-lg">-</button>
+                <input type="number" id="breakTime" value=5 min="1" />
+                <button class="breakaddbtn btn-primary btn-lg">+</button>
+                <h3>...minutes of <span id="breakText">sweet break</span>!</h3>
+            </div>
+
+            <button id="submit" class="btn-primary btn-lg">START</button>
+            <button id="clear" class="btn-primary btn-lg">CLEAR</button>
+        </section>
+        <section id="timer">
+            <h1 id="digits"></h1>
+        </section>
+    </section>
+    <script src="app.js"></script>
+    
+</body>
+</html>
